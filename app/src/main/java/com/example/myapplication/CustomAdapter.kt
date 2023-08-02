@@ -30,6 +30,7 @@ class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adap
         // sets the text to the textview from our itemHolder class
         holder.textView.text = ItemsViewModel.text
         holder.textView1.text = ItemsViewModel.text2
+        holder.textView2.text = ItemsViewModel.text3
 
     }
 
@@ -43,5 +44,6 @@ class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adap
         val imageView: ImageView = itemView.findViewById(R.id.imageview)
         val textView: TextView = itemView.findViewById(R.id.textView)
         var textView1: TextView = itemView.findViewById(R.id.textView1)
+        var textView2: TextView = itemView.findViewById(R.id.textView2)
     }
 }
